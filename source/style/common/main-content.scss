@@ -1,0 +1,84 @@
+.main .container {
+  text-align: center;
+  .works {
+    margin-bottom: rem(30px);
+  }
+}
+
+.title {
+  color: $color-main;
+  font-family: $base-font;
+  font-size: rem(58px);
+  font-weight: 400;
+  margin-bottom: rem(55px);
+}
+
+
+.works {
+  
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin: 0 auto;
+  max-width: 600px;
+  padding: 0;
+  align-items: center;
+  text-align: left;
+
+  list-style: none;
+  
+  @include phone {
+    justify-content: center;
+  }
+}
+
+
+
+.works__item {
+  height: 50px;
+  margin: rem(15px);
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  border: rem(1px) solid $color-main;
+  background: $color-nonactive;
+	box-shadow: inset 0 0 0 1px $color-white;
+
+  .works__link {
+  font-family: Playfair Display;
+  font-weight: 700;
+  font-size: rem(16px);
+
+  text-decoration: none;
+  color: $color-main;
+  }
+
+  &:hover {
+    border: rem(1px) solid $color-active;
+    background: $color-layout;
+    cursor: pointer;
+
+    .works__link {
+      text-decoration: none;
+      color: $color-active;
+      cursor: pointer;
+    } 
+  }
+
+}
+
+.loader {
+  color: $color-nonactive;
+  display: inline-block;
+  font-family: $sign-font;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-bottom: 60px;
+  text-transform: uppercase;
+}
+
+
+

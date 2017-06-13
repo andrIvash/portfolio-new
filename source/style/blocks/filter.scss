@@ -1,0 +1,55 @@
+.filter {
+  display: inline-flex;
+  flex-wrap: wrap;
+  font-family: $sign-font;
+  font-size: rem(12px);
+  font-weight: 700;
+  justify-content: center;
+  letter-spacing: 1px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-transform: uppercase;
+}
+
+.filter__elem {
+  display: inline-block;
+  margin: 0 rem(28px);
+
+  @include phone {
+    margin: 0 rem(10px) rem(10px);
+  }
+}
+
+.filter__link {
+  color: $color-nonactive;
+  position: relative;
+  text-decoration: none;
+
+  &:visited,
+  &:active {
+    color: $color-nonactive;
+    text-decoration: none;
+  }
+
+  &:hover {
+    color: $color-main;
+    cursor: pointer;
+    text-decoration: none;
+  }
+}
+
+.filter__link.filter__link_active {
+  color: $color-main;
+
+  &::after {
+    background-color: $color-active;
+    content: '';
+    display: block;
+    height: 2px;
+    left: 0;
+    position: absolute;
+    top: rem(21px);
+    width: 100%;
+  }
+}

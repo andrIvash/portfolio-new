@@ -1,0 +1,34 @@
+.copyright {
+  color: $color-nonactive;
+  font-family: $sign-font;
+  font-size: rem(12px);
+  font-weight: 700;
+}
+.copyright__link {
+  color: $color-nonactive;
+  cursor: pointer;
+  margin-left: rem(10px);
+  text-decoration: none;
+
+  &:visited,
+  &:active {
+    color: $color-nonactive;
+    text-decoration: none;
+  }
+
+  &:hover {
+    color: $color-active;
+    text-decoration: none;
+  }
+}
+.copyright__text {
+  padding-right: 10px;
+  position: relative;
+
+  &:after {
+    content: '|';
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+}

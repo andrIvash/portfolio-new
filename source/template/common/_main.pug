@@ -1,0 +1,23 @@
+-
+    var works = [
+        {title: 'Fe', data: 'portfolio'},
+        {title: 'Cu', data: 'site'},
+        {title: 'Mg', data: 'portal'},
+        {title: 'Cl', data: 'landing'},
+        {title: 'Ni', data: 'shop'},
+        {title: 'K', data: 'app'},
+        {title: 'O',  data: 'node'},
+        {title: 'Cl', data: 'landing'},
+        {title: 'Ni', data: 'shop'},
+        {title: 'K', data: 'app'},
+        {title: 'O',  data: 'node'}
+    ];
+
+main.main
+  .container
+    h1.title Project Elements
+    ul.works
+      each item in works
+        li.works__item
+          a.works__link(href='#', data-sample=item.data)= item.title
+    include ../blocks/_sample

@@ -1,0 +1,31 @@
+.footer {
+  background-color: $color-layout;
+}
+.footer .container {
+  min-height: rem(70px);
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+}
+
+.footer__left, .footer__right {
+  width: 50%;
+  display: flex;
+  align-items: center;
+}
+.footer__left {
+  justify-content: flex-end;
+}
+.footer__right {
+  justify-content: flex-start;
+  margin-left: rem(20px);
+  border-left: rem(2px) solid $color-active;
+}
+
+.footer .socials {
+  margin-left: rem(20px);
+}
+
+@import '../blocks/copyright';
+@import '../blocks/socials';
+

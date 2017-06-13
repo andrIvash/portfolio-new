@@ -1,0 +1,18 @@
+.sample {
+  position: relative;
+  max-width: rem(600px);
+  margin: 0 auto;
+  min-height: rem(200px);
+
+  &::before {
+    border-top: rem(2px) solid $color-active;
+    content: '';
+    display: block;
+    left: 0;
+    margin: auto;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 70%;
+  }
+}
