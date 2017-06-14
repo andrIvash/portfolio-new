@@ -1,4 +1,9 @@
-ul.main-menu
-  each val, index in ['Home', 'Catalog', 'News', 'Sale', 'About', 'Contact']
-    li.main-menu__elem
-      a.main-menu__link(href='#', title=val, class={'main-menu__link_active': index==1, 'main-menu__link_sale': index==3})= val
+nav.main-menu
+        ul.main-menu__list
+            each val, index in ['About', 'Logo', 'Blog']
+                if val == 'Logo'
+                    li.main-menu__elem
+                        include ../blocks/_logo
+                else
+                    li.main-menu__elem
+                        a.main-menu__link(href='', title=val, class={'main-menu__link_active': index == 0})= val
