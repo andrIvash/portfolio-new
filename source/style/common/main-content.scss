@@ -38,6 +38,7 @@
   height: 50px;
   margin: rem(15px);
   width: 50px;
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -45,6 +46,28 @@
   border: rem(1px) solid $color-main;
   background: $color-nonactive;
 	box-shadow: inset 0 0 0 1px $color-white;
+
+  .works__branch-number {
+    position: absolute;
+    top: rem(2px);
+    left: rem(3px);
+
+    font-family: Lato;
+    font-size: rem(10px);
+    font-weight: 400;
+    color: $color-main;
+  }
+
+  .works__commits-number {
+    position: absolute;
+    bottom: rem(2px);
+    right: rem(3px);
+
+    font-family: Lato;
+    font-size: rem(10px);
+    font-weight: 400;
+    color: $color-main;
+  }
 
   .works__link {
   font-family: Playfair Display;
@@ -59,8 +82,10 @@
     border: rem(1px) solid $color-active;
     background: $color-layout;
     cursor: pointer;
+    
 
     .works__link {
+      animation: bounceIn  0.8s ease-in-out;
       text-decoration: none;
       color: $color-active;
       cursor: pointer;

@@ -38,41 +38,42 @@
 }
 
 
-/* playfair-display-regular - cyrillic_latin */
+
+/* playfair-display-regular - latin_cyrillic */
 @font-face {
   font-family: 'Playfair Display';
   font-style: normal;
   font-weight: 400;
   src: local('Playfair Display'), local('PlayfairDisplay-Regular'),
-       url('../fonts/playfair-display-v10-cyrillic_latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-       url('../fonts/playfair-display-v10-cyrillic_latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+       url('../fonts/playfair-display-v10-latin_cyrillic-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/playfair-display-v10-latin_cyrillic-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
-/* playfair-display-700 - cyrillic_latin */
-@font-face {
-  font-family: 'Playfair Display';
-  font-style: normal;
-  font-weight: 700;
-  src: local('Playfair Display Bold'), local('PlayfairDisplay-Bold'),
-       url('../fonts/playfair-display-v10-cyrillic_latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-       url('../fonts/playfair-display-v10-cyrillic_latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-}
-/* playfair-display-italic - cyrillic_latin */
+/* playfair-display-italic - latin_cyrillic */
 @font-face {
   font-family: 'Playfair Display';
   font-style: italic;
   font-weight: 400;
   src: local('Playfair Display Italic'), local('PlayfairDisplay-Italic'),
-       url('../fonts/playfair-display-v10-cyrillic_latin-italic.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-       url('../fonts/playfair-display-v10-cyrillic_latin-italic.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+       url('../fonts/playfair-display-v10-latin_cyrillic-italic.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/playfair-display-v10-latin_cyrillic-italic.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
-/* playfair-display-900 - cyrillic_latin */
+/* playfair-display-700 - latin_cyrillic */
+@font-face {
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Playfair Display Bold'), local('PlayfairDisplay-Bold'),
+       url('../fonts/playfair-display-v10-latin_cyrillic-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/playfair-display-v10-latin_cyrillic-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* playfair-display-900 - latin_cyrillic */
 @font-face {
   font-family: 'Playfair Display';
   font-style: normal;
   font-weight: 900;
   src: local('Playfair Display Black'), local('PlayfairDisplay-Black'),
-       url('../fonts/playfair-display-v10-cyrillic_latin-900.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-       url('../fonts/playfair-display-v10-cyrillic_latin-900.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+       url('../fonts/playfair-display-v10-latin_cyrillic-900.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/playfair-display-v10-latin_cyrillic-900.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
 //----------------------------------- variable --------------------------------//
@@ -130,3 +131,5 @@ body {
 @import 'common/footer';
 @import 'blocks/main-menu';
 @import 'blocks/sample';
+@import 'blocks/copyright';
+@import 'blocks/socials';

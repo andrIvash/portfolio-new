@@ -1,16 +1,16 @@
 -
     var works = [
-        {title: 'Fe', data: 'portfolio'},
-        {title: 'Cu', data: 'site'},
-        {title: 'Mg', data: 'portal'},
-        {title: 'Cl', data: 'landing'},
-        {title: 'Ni', data: 'shop'},
-        {title: 'K', data: 'app'},
-        {title: 'O',  data: 'node'},
-        {title: 'Cl', data: 'landing'},
-        {title: 'Ni', data: 'shop'},
-        {title: 'K', data: 'app'},
-        {title: 'O',  data: 'node'}
+        {title: 'Fe', data: 'portfolio', brunch: '2', commit: '15'},
+        {title: 'Cu', data: 'site', brunch: '5', commit: '5'},
+        {title: 'Mg', data: 'portal', brunch: '12', commit: '11'},
+        {title: 'Cl', data: 'landing', brunch: '6', commit: '6'},
+        {title: 'Ni', data: 'shop', brunch: '2', commit: '23'},
+        {title: 'K', data: 'app', brunch: '12', commit: '45'},
+        {title: 'O',  data: 'node', brunch: '5', commit: '15'},
+        {title: 'Cl', data: 'landing', brunch: '22', commit: '56'},
+        {title: 'Ni', data: 'shop', brunch: '22', commit: '56'},
+        {title: 'K', data: 'app', brunch: '1', commit: '45'},
+        {title: 'O',  data: 'node', brunch: '6', commit: '121'}
     ];
 
 main.main
@@ -19,5 +19,7 @@ main.main
     ul.works
       each item in works
         li.works__item
+          span.works__branch-number= item.brunch
+          span.works__commits-number= item.commit  
           a.works__link(href='#', data-sample=item.data)= item.title
     include ../blocks/_sample
