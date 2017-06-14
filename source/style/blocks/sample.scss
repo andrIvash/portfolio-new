@@ -3,6 +3,9 @@
   max-width: rem(600px);
   margin: 0 auto;
   min-height: rem(200px);
+  display: flex;
+
+  padding: rem(20px) 0;
 
   &::before {
     border-top: rem(2px) solid $color-active;
@@ -15,4 +18,25 @@
     top: 0;
     width: 70%;
   }
+}
+
+.sample__left {
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.sample__img-wrap {
+  width: rem(220px);
+  height: rem(150px);
+}
+
+.sample__img {
+  width: 100%;
+  height: auto;
+} 
+
+.sample__right {
+  width: 60%;
 }

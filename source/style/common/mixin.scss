@@ -94,22 +94,6 @@
   }
 }
 
-// fonts
-@mixin roboto-bold {
-  font-family:'Roboto-Bold';
-}
-@mixin roboto-light {
-  font-family:'Roboto-Light';
-}
-@mixin roboto-medium {
-  font-family:'Roboto-Medium';
-}
-@mixin roboto-regular {
-  font-family:'Roboto-Regular';
-}
-@mixin bernier {
-  font-family:'BERNIERRegular-Regular';
-}
 
 
 @mixin placeholder($color) {

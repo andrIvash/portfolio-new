@@ -20,7 +20,7 @@
   flex-wrap: wrap;
   justify-content: flex-start;
   margin: 0 auto;
-  max-width: 600px;
+  max-width: rem(600px);
   padding: 0;
   align-items: center;
   text-align: left;
@@ -35,9 +35,9 @@
 
 
 .works__item {
-  height: 50px;
+  height: rem(50px);
   margin: rem(15px);
-  width: 50px;
+  width: rem(50px);
   position: relative;
   display: flex;
   justify-content: center;
@@ -98,10 +98,10 @@
   color: $color-nonactive;
   display: inline-block;
   font-family: $sign-font;
-  font-size: 12px;
+  font-size: rem(12px);
   font-weight: 700;
-  letter-spacing: 1px;
-  margin-bottom: 60px;
+  letter-spacing: rem(1px);
+  margin-bottom: rem(60px);
   text-transform: uppercase;
 }
 
