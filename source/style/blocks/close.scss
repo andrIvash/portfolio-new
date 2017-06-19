@@ -1,0 +1,11 @@
+.close {
+    position: absolute;
+    width: rem(15px);
+    height: rem(15px);
+    top: rem(20px);
+    right: 0;
+
+    outline: none;
+    border: 0;
+    cursor: pointer;
+}

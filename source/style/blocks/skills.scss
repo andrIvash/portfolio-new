@@ -1,0 +1,40 @@
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    
+    
+    list-style: none;
+    justify-content: center;
+
+}
+.skills__item  {
+    margin: rem(7px) rem(5px);
+    padding: 3px 20px;
+    position: relative;
+
+    font-family: "Lato", sans-serif;
+    font-size: 0.7rem;
+    font-weight: 700;
+    color: $color-active;
+    text-transform: uppercase;
+    border: 1px solid $color-active;
+    border-radius: 10px;
+    text-align: center;
+    
+   
+   &::before, &::after {
+    content: ''; 
+    position: absolute;
+    left: 13px; 
+    bottom: -20px;
+    border: 10px solid transparent;
+    border-top: 10px solid $color-active;
+   }
+   &::after {
+    border-top: 10px solid $color-white;
+    bottom: -19px; 
+   }
+}

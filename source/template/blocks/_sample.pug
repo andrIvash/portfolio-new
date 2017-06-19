@@ -1,16 +1,13 @@
 .sample
-    .sample__left
+    button.close(type="button")
+    .sample__inner-block.sample__inner-block--left
         .sample__img-wrap
             img.sample__img(src="../assets/img", alt="")
-    .sample__right
-        .sample__title
-        ul.sample__skils.skills
-            li.skills__item jade
-            li.skills__item scss
-            li.skills__item html
+    .sample__inner-block.sample__inner-block--right
+        h2.sample__title Lorem ipsum
+        include _skills.pug
         .sample__descr
             p
-                |asda sasdasd  asd asd  asd a sd a sd  asd as da sdasd asdasdasdasdasd
-                |asdasd asd as d as a sd  as dasdasd as d a sd asd a sda sd asd a sdasd
+                | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus ipsam, molestiae! Ipsum molestiae pariatur ipsam delectus optio nisi est aspernatur voluptas vel rem illum amet perferendis eligendi alias impedit harum commodi, deserunt similique, maxime, perspiciatis adipisci quisquam minima numquam vitae nesciunt. Dolor minus, sunt praesentium eveniet nam eaque. Provident, mollitia.   
 
 
