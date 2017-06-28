@@ -97,6 +97,7 @@ body {
   height: 100%;
 }
 
+
 body {
   display: flex;
   flex-direction: column;
@@ -135,3 +136,17 @@ body {
 @import 'blocks/socials';
 @import 'blocks/skills';
 @import 'blocks/close';
+
+
+html {
+  font-size: 16px;
+  @include laptop {
+    font-size: 14px;
+  }
+  @include tablet {
+    font-size: 13px;
+  }
+  @include phone {
+    font-size: 12px;
+  }
+}

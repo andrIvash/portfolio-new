@@ -1,11 +1,45 @@
 .close {
     position: absolute;
-    width: rem(15px);
-    height: rem(15px);
+    width: 15px;
+    height: 15px;
     top: rem(20px);
     right: 0;
 
     outline: none;
+    padding: 0;
     border: 0;
     cursor: pointer;
+    background: transparent;
+
+    &:before, &:after {
+        content: '';
+        display: block;
+        position: absolute; 
+        width: 15px;
+        height: 2px;
+        background: grey;
+        left: 0;
+
+    }
+    &:before {
+        top: 6px;
+        transform: rotate(45deg);
+        transition: transform 0.4s linear;
+    }
+    &:after {
+        bottom: 7px;
+        transform: rotate(-45deg);
+        transition: transform 0.4s linear
+    }
+
+    &:hover {
+         &:before, &:after {
+            transform: rotate(0deg);
+         }
+    }
+}
+
+@keyframes example {
+    from {background-color: red;}
+    to {background-color: yellow;}
 }

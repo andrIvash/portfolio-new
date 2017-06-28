@@ -11,6 +11,13 @@
   font-size: rem(58px);
   font-weight: 400;
   margin-bottom: rem(55px);
+
+  @include tablet {
+    font-size: rem(48px);
+  }
+  @include phone {
+    font-size: rem(38px);
+  }
 }
 
 
