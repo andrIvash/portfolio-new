@@ -28,13 +28,13 @@
    &::before, &::after {
     content: ''; 
     position: absolute;
-    left: 13px; 
-    bottom: -20px;
-    border: 10px solid transparent;
-    border-top: 10px solid $color-active;
+    left: 12px; 
+    bottom: -11px;
+    border: 4px solid transparent;
+    border-top: 7px solid $color-active;
    }
    &::after {
-    border-top: 10px solid $color-white;
-    bottom: -19px; 
+    border-top: 13px solid $color-white;
+    bottom: -10px; 
    }
 }

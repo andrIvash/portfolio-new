@@ -6,24 +6,47 @@
   display: flex;
   justify-content: center;
   align-items: stretch;
+
+  @include phone {
+    flex-direction: column;
+  }
 }
 
 .footer__left, .footer__right {
   width: 50%;
   display: flex;
   align-items: center;
+
+  @include phone {
+    min-height: rem(36px);
+    width: 100%;
+  }
 }
 .footer__left {
   justify-content: flex-end;
+
+  @include phone {
+    justify-content: center;
+  }
 }
 .footer__right {
   justify-content: flex-start;
   margin-left: rem(20px);
   border-left: rem(2px) solid $color-active;
+
+  @include phone {
+    margin-left: 0;
+    border-left: none;
+    border-top: rem(1px) solid $color-active;
+    justify-content: center;
+  }
 }
 
 .footer .socials {
   margin-left: rem(20px);
+  @include phone {
+    margin-left: 0;
+  }
 }
 
 

@@ -6,9 +6,31 @@
 .socials__item {
     display: inline-block;
     font-size: 0;
-    margin-left: rem(20px);
+    margin-left: rem(8px);
 
     &:first-child {
         margin-left: 0;
+    }
+}
+.socilas__link {
+    display: block;
+    text-decoration: none;
+    cursor: pointer;
+
+    .icon {
+       fill: $color-nonactive;
+       width: rem(14px);
+       height: rem(14px);     
+    }
+
+    &:active, &visited {
+        .icon {
+            fill: $color-nonactive;
+        }
+    }
+    &:hover {
+        .icon {
+            fill: $color-active;
+        }
     }
 }

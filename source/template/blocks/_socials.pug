@@ -1,6 +1,7 @@
 ul.socials
-    each val in ['git', 'ln', 'vk']
+    each val in ['github', 'linkedin', 'twitter']
         li.socials__item
             a.socilas__link(href='#', title=val)= val
-                img.socials__img(src='', alt=val)
+                svg.icon
+                    use(xlink:href="assets/img/sprite/sprite.svg#" + val )
 
