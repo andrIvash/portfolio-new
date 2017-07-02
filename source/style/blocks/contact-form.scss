@@ -1,0 +1,32 @@
+.contact-form {
+    padding: rem(20px) rem(10px);
+}
+.contact-form__title {
+    margin-bottom: rem(20px);
+}
+.contact-form__elem {
+    display: flex;
+    margin-bottom: rem(20px);
+}
+.contact-form__label {
+    display: inline-block;
+    flex: 1;
+    margin-right: 20px;
+    text-align: right;
+
+}
+.contact-form__input {
+    display: inline-block;
+    flex: 2;
+    text-align: left;
+}
+.contact-form__buttons {
+    display: inline-block;
+    flex: 2;
+    text-align: left;
+}
+.contact-form__btn {
+    &:last-child {
+        margin-left: rem(10px)
+    }
+}

@@ -1,0 +1,21 @@
+.hero {
+    text-align: right;
+}
+.hero__img-wrap {
+    display: inline-block;
+    overflow: hidden;
+    width: rem(200px);
+    height: rem(240px);
+    margin: 0 rem(10px) rem(20px) 0;
+}
+.hero__img {
+    max-height: 100%;
+    width: auto;
+}
+.hero__content {
+    font-family: $base-font;
+    font-size: 0.9rem;
+    font-weight: 400;
+    text-align: left;
+    line-height: 1.4;
+}

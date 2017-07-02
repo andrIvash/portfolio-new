@@ -1,12 +1,11 @@
 extends _main-layout
 include common/_mixin.pug
 
-
 block header
-    - var active = 1
+   - var active = 0
     .header
         .container
             +menu(active)
-            
+
 block content
-    include common/_main
+    include common/_about

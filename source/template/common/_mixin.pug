@@ -1,0 +1,10 @@
+mixin menu(active)
+    nav.main-menu
+        ul.main-menu__list
+            each val, index in ['about', 'logo', 'blog']
+                if val == 'logo'
+                    li.main-menu__elem
+                        include ../blocks/_logo
+                else
+                    li.main-menu__elem
+                        a.main-menu__link(href="/" + val + ".html" , title=val, class={'main-menu__link_active': index == active})= val
