@@ -1,5 +1,5 @@
 .footer {
-  background-color: $color-layout;
+  background-color: $color-sale;
 }
 .footer .container {
   min-height: rem(70px);
@@ -32,12 +32,12 @@
 .footer__right {
   justify-content: flex-start;
   margin-left: rem(20px);
-  border-left: rem(2px) solid $color-active;
+  border-left: rem(2px) solid $color-main;
 
   @include phone {
     margin-left: 0;
     border-left: none;
-    border-top: rem(1px) solid $color-active;
+    border-top: rem(1px) solid $color-main;
     justify-content: center;
   }
 }
