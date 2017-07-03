@@ -1,12 +1,24 @@
 .contact-form {
+    display: block;
     padding: rem(20px) rem(10px);
+    max-width: 564px;
 }
 .contact-form__title {
     margin-bottom: rem(20px);
+
+    font-family: "Lato", sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: $color-main;
 }
 .contact-form__elem {
     display: flex;
     margin-bottom: rem(20px);
+
+    &:last-child {
+        justify-content: flex-end;
+    }
 }
 .contact-form__label {
     display: inline-block;
@@ -14,16 +26,37 @@
     margin-right: 20px;
     text-align: right;
 
+    font-family: "Lato", sans-serif;
+    font-size: 0.9rem;
+    font-weight: 400;
+    color: $color-main;
+    cursor: pointer;
+
 }
-.contact-form__input {
+.contact-form__input, .contact-form__textarea {
     display: inline-block;
-    flex: 2;
+    flex: 3;
     text-align: left;
+    border: 1px solid $color-main;
+    padding: rem(5px) rem(10px);
+    height: rem(20px);
+
+    font-family: "Playfair Display", serif;
+    font-size: 0.9rem;
+    font-weight: 400;
+    
+    &:focus {
+       outline-color: $color-active;
+       border: 1px solid transparent;     
+    }
+}
+.contact-form__textarea {
+    height: rem(80px);
+    overflow-y: auto;
+    resize: none;
 }
 .contact-form__buttons {
-    display: inline-block;
-    flex: 2;
-    text-align: left;
+    display: inline-block;  
 }
 .contact-form__btn {
     &:last-child {

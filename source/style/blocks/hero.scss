@@ -4,13 +4,13 @@
 .hero__img-wrap {
     display: inline-block;
     overflow: hidden;
-    width: rem(200px);
-    height: rem(240px);
+    max-width: 200px;
+    max-height: 240px;
     margin: 0 rem(10px) rem(20px) 0;
 }
 .hero__img {
     max-height: 100%;
-    width: auto;
+    width: 100%;
 }
 .hero__content {
     font-family: $base-font;
