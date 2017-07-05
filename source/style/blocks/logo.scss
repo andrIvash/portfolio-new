@@ -1,0 +1,19 @@
+.logo {
+    width: 150px;
+    height: 40px;
+}
+.logo__img-wrap {
+    display: block;
+    text-decoration: none;
+
+  &:visited,
+  &:active,
+  &:hover {
+    text-decoration: none;
+  }
+
+}
+.logo__img {
+    max-width: 100%;
+    height: auto;
+}
