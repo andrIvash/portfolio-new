@@ -1,0 +1,34 @@
+#new-progect-popup
+    .modal-wrapper
+        .modal-header
+            button(type="button" class="b-close")
+            h4.modal-title Добавление проекта
+        .modal-body
+            form(id="add-new-project" role="form" class="form" method="post" enctype="multipart/form-data")
+                .server-mes.error-mes
+                .server-mes.success-mes
+                .form-group
+                    label(for="projectName" class="label") Название проекта
+                    input(id="projectName" name="projectName" type="text" placeholder="Введите название" qtip-content="Вы не ввели название" class="input")
+                .form-group
+                    label(for="projectName_e" class="label") Название проекта eng
+                    input(id="projectName_e" name="projectName_e" type="text" placeholder="Введите название" qtip-content="Вы не ввели название" class="input")
+                .form-group
+                    #uploadfile(class="fileupload-wrapper")
+                        span.label Картинка проекта
+                        label.fileupload-lable
+                            input(id="fileupload" type="file" name="files[]" class="fileupload")
+                            input(id="fileurl" type="hidden" name="fileurl")
+                        input(id="filename" type="text" name="filename" placeholder="Загрузите изображение" disabled qtip-content="Вы не выбрали изображение" class="input")
+                    </div>
+                .form-group
+                    label(for="projectUrl" class="label") URL проекта
+                    input(id="projectUrl" name="projectUrl" type="text" placeholder="Добавьте ссылку" qtip-content="Вы не добавили ссылку" class="input")
+                .form-group
+                    label(for="projectDesc" class="label") Описание
+                    textarea(id="projectDesc" name="text" rows="3" placeholder="Пара слов о вашем проекте" qtip-content="Описание проекта обязательно" class="textarea")
+                .form-group
+                    label(for="projectDesc_e" class="label") Описание eng
+                    textarea(id="projectDesc_e" name="text_e" rows="3" placeholder="Пара слов о вашем проекте" qtip-content="Описание проекта обязательно" class="textarea")
+                .btn-wrapp
+                    button(type="submit" class="btn") Добавить
