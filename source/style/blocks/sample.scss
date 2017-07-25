@@ -29,6 +29,8 @@
 
 .sample__inner-block--left {
   width: 40%;
+  flex-direction: column;
+  justify-content: flex-start;
   @include phone {
     display: none;
   }
@@ -49,7 +51,7 @@
   height: rem(150px);
   border: 1px solid $color-sale;
   box-shadow: 9px 11px 19px -6px rgba($color-sale, 1);
-  
+  margin-bottom: rem(10px);
 
 }
 
@@ -57,6 +59,29 @@
   width: 100%;
   height: auto;
 } 
+
+.sample__link {
+  display: inline-block;  
+  margin: 0 auto;
+
+  font-family: "Playfair Display", serif;
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: $color-nonactive;
+  cursor: pointer;
+  text-decoration: none;
+
+  &:visited,
+  &:active {
+    color: $color-nonactive;
+    text-decoration: none;
+  }
+
+  &:hover {
+    color: $color-main;
+    text-decoration: none;
+  }
+}
 
 .sample__title {
   margin: rem(20px) 0;

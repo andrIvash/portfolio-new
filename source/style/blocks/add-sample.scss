@@ -1,0 +1,86 @@
+#new-progect-popup {
+    display: none;
+}
+.newsample {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    //@include centered;
+    //background: rgba(grey, 0.8);
+    .has-error {
+        border: 1px solid #F1D031;
+    }
+}
+.newsample__title {
+    font-family: $sign-font;
+    font-size: 1rem;
+    color: $color-active;
+}
+
+.newsample__wrapper {
+    position: relative;
+    width: 280px;
+    padding: 20px;
+    background: white;
+
+}
+.newsample__btn {
+    top: 5px;
+    right: 5px;
+}
+
+.addform__group {
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: flex-start;   
+}
+.addform__fileupload {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .addform__label {
+        margin-bottom: 5px;
+    }
+}
+.addform__label {
+    flex: 1;
+    font-family: $sign-font;
+    font-size: 1rem;
+    color: $color-main;
+}
+.addform__input, .addform__textarea {
+    flex: 2;
+    border: 1px dotted $color-nonactive;
+    margin-left: 5px;
+    width: 210px;
+    font-family: $sign-font;
+    font-size: 0.8rem;
+    color: $color-main;
+}
+.addform__textarea {
+    resize: none;
+    overflow-y: auto;
+    height: 40px;
+}
+.addform__input {
+    height: 20px;
+}
+#fileupload {
+    border: 0;
+
+}
+.addform__btn {
+    font-family: $sign-font;
+    font-size: 0.8rem;
+    color: $color-main;
+}
+.addform__btn_reset {
+    margin-left: 10px;
+}
+
+@include tablet {
+    .qtip {
+        display: none !important;
+    }
+}
