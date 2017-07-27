@@ -97,21 +97,30 @@ body {
   height: 100%;
 }
 
+html {
+  background-image: url('../img/pattern.png');
+
+} 
 
 body {
   display: flex;
   flex-direction: column;
   margin: 0;
   min-height: 100vh;
+
+  @media screen and (min-width: 500px) {/* если окно браузера больше максимальной ширины сайта */ 
+    margin-left: calc(100vw - 100%);
+    margin-right: 0;
+  }
 }
 
 .wrapper {
   flex: 1;
   padding: 0;
   position: relative;
-  background: url('../img/pattern.png');
   //background-size: cover;
   //background: #FBFCFD;
+  
 
 }
 

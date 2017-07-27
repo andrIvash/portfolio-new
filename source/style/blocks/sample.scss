@@ -19,6 +19,9 @@
     width: 70%;
   }
 }
+.sample_hide {
+  display: none;
+}
 
 .sample__inner-block {
   display: flex;
@@ -38,6 +41,7 @@
 .sample__inner-block--right {
   width: 60%;
   flex-direction: column;
+  justify-content: flex-start;
   @include phone {
     width: 100%;
   }
@@ -84,7 +88,7 @@
 }
 
 .sample__title {
-  margin: rem(20px) 0;
+  margin: rem(20px) auto;
 
   font-family: "Playfair Display", serif;
   font-size: 1.5rem;
@@ -104,4 +108,8 @@
   line-height: 1.4;
   color: $color-main;
 
+}
+
+.sample .sample__skills {
+  margin-bottom: 10px;
 }

@@ -5,8 +5,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    //@include centered;
-    //background: rgba(grey, 0.8);
+
     .has-error {
         border: 1px solid #F1D031;
     }
@@ -38,9 +37,13 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 0 auto;
 
     .addform__label {
         margin-bottom: 5px;
+    }
+    #fileupload {
+        width: 95px;
     }
 }
 .addform__label {
