@@ -1,0 +1,8 @@
+.capcha {
+    display: flex;
+    justify-content: flex-end;
+
+    @include phone() {
+        justify-content: center;
+    }
+}
